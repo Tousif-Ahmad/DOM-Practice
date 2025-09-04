@@ -4,7 +4,6 @@ let addBtn = document.querySelector("#addTaskBtn");
 let list = document.querySelector("#taskList");
 
 let tasks = []; // Store all tasks here
-
 // Add a new task
 function addTask() {
   let text = input.value.trim();
@@ -70,6 +69,7 @@ input.addEventListener("keypress", function (e) {
 
 // Initial render
 showTasks();
+
 
 
 
