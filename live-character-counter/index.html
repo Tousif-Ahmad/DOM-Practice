@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+</head>
+<body>
+    <input id="inputField" type="text" placeholder="write anything...">
+    <h1>Total Characters : <span>100</span></h1>
+
+    <!-- script -->
+    <script>
+        // let count = 0;
+        let inp = document.querySelector("#inputField");
+        let span = document.querySelector("span");
+        inp.addEventListener("input", function(dets){
+            // console.log(dets.target.value);
+            // count++;
+            // span.textContent = count;
+
+            span.textContent = inp.value.length;
+            
+        })
+
+    </script>
+</body>
+</html>
