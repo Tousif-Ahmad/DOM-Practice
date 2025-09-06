@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+     <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            display: none;
+        }
+        #btn{
+            padding: 12px 22px;
+            color: white;
+            border-radius: 5px;
+            background-color: teal;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: rgb(62, 118, 118);
+        }
+     </style>
+</head>
+<body>
+    <div id="main">
+        <input type="file" id="fileInp">
+        <div id="btn">
+            Upload File
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
