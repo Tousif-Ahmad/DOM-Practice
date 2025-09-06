@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mousemove and mouseover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            overflow: hidden;
+
+        }
+        #abcd{
+            width: 80px;
+            height: 80px;
+            transition: all cubic-bezier(0.19, 1, 0.22, .2);
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="abcd"></div>
+    <script src="script.js"></script>
+</body>
+</html>
