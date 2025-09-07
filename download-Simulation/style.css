@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html,body{
+    height: 100%;
+    width: 100%;
+} */
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(135deg, #1f1c2c, #928dab);
+font-family: Arial, sans-serif;
+}
+.card {
+width: 320px;
+padding: 25px;
+border-radius: 16px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+text-align: center;
+color: #fff;
+}
+.card h2 {
+margin: 0 0 20px;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.progress-bar {
+width: 100%;
+height: 20px;
+background: rgba(255, 255, 255, 0.15);
+border-radius: 10px;
+overflow: hidden;
+margin-bottom: 15px;
+}
+.progress-fill {
+width: 0%;
+height: 100%;
+background: linear-gradient(90deg, #4f46e5, #06b6d4);
+border-radius: 10px;
+transition: width 0.3s linear;
+}
+.percentage {
+font-size: 16px;
+font-weight: 600;
+color: #e0e0e0;
+}
