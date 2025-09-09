@@ -27,9 +27,6 @@ let users = [
    
 ]
 
-// saare users show krana
-// filter krna har baar input krne par 
-// show krna filtered users 
 
 function showUsers(arr){
     arr.forEach(function(user){
