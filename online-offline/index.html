@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online / Offline Indicator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="card" aria-labelledby="user-name">
+      <div class="avatar" aria-hidden="true">TA</div>
+      <div class="meta">
+        <div id="user-name" class="name">Tousif Ahmad</div>
+        <div class="sub">Frontend Developer</div>
+
+        <!-- status area: JS should toggle the class 'online' / 'offline' on the .status element
+             and update the content of .status-text and .status-detail as needed. -->
+        <div class="status-wrap">
+          <span class="status" id="connection-dot" role="img" aria-label="connection status"></span>
+          <div>
+            <div class="status-text" id="status-text">Offline</div>
+            <div class="status-detail" id="status-detail">You appear to be offline.</div>
+            <div class="last-seen" id="last-seen" aria-live="polite"> </div>
+          </div>
+        </div>
+
+        <!-- Example JS hooks (don't include JS here — user will provide):
+             - document.getElementById('connection-dot') -> add/remove 'online' or 'offline'
+             - document.getElementById('status-text').textContent = 'Online' / 'Offline'
+             - document.getElementById('status-detail').textContent = 'Active now' / 'Last seen 5m ago'
+             - document.getElementById('last-seen').textContent = 'Last seen: 2025-09-10 21:34' (optional)
+        -->
+
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
